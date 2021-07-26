@@ -62,7 +62,7 @@ def bruter(wordqueue, headername):
         wordqueue.task_done()
 
 if __name__ == '__main__':
-    parser = ap.ArgumentParser(description='A tool for testing CRLF injection')
+    parser = ap.ArgumentParser(description='A tool to test for CRLF injection')
     urlgroup = parser.add_mutually_exclusive_group(required=True)
     urlgroup.add_argument('-u', '--url', 
         help='One URL to be tested.')
