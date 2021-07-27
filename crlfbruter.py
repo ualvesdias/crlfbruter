@@ -41,7 +41,7 @@ def bruter(wordqueue, headername):
         url, payload = wordqueue.get()
         attempt = url + payload
 
-        print(f'Trying {attempt}...' + ' '*30, end='\r')
+        print(f'Trying {attempt}...' + ' '*100, end='\r')
 
         try:
             resp = r.get(attempt, verify=False, allow_redirects=False)
